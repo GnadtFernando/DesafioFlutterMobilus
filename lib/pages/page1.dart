@@ -30,6 +30,13 @@ class Page1 extends StatelessWidget {
                     width: 200,
                     height: 16,
                     color: Colors.blue,
+                    child: Center(
+                      child: Container(
+                        width: 30,
+                        height: 16,
+                        color: Colors.orange,
+                      ),
+                    ),
                   ),
                   const CircleAvatar(
                     radius: 80,
@@ -57,6 +64,31 @@ class Page1 extends StatelessWidget {
                     width: 280,
                     height: 80,
                     color: Colors.red,
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                      children: [
+                        Container(
+                          width: 40,
+                          height: 80,
+                          color: Colors.blue,
+                        ),
+                        Container(
+                          width: 40,
+                          height: 80,
+                          color: Colors.blue,
+                        ),
+                        Container(
+                          width: 40,
+                          height: 80,
+                          color: Colors.blue,
+                        ),
+                        Container(
+                          width: 40,
+                          height: 80,
+                          color: Colors.blue,
+                        ),
+                      ],
+                    ),
                   ),
                   IconButton(
                     icon: const Icon(

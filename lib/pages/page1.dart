@@ -7,7 +7,7 @@ class Page1 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.blueAccent,
+      backgroundColor: const Color.fromARGB(230, 60, 73, 177),
       body: SafeArea(
           child: Column(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -61,31 +61,31 @@ class Page1 extends StatelessWidget {
                   ),
                   Container(
                     margin: const EdgeInsets.fromLTRB(0, 0, 0, 80),
-                    width: 280,
-                    height: 80,
+                    width: 320,
+                    height: 60,
                     color: Colors.red,
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                       children: [
                         Container(
-                          width: 40,
+                          width: 60,
                           height: 80,
-                          color: Colors.blue,
+                          color: const Color.fromARGB(255, 100, 237, 255),
                         ),
                         Container(
-                          width: 40,
+                          width: 60,
                           height: 80,
-                          color: Colors.blue,
+                          color: const Color.fromARGB(255, 100, 237, 255),
                         ),
                         Container(
-                          width: 40,
+                          width: 60,
                           height: 80,
-                          color: Colors.blue,
+                          color: const Color.fromARGB(255, 100, 237, 255),
                         ),
                         Container(
-                          width: 40,
+                          width: 60,
                           height: 80,
-                          color: Colors.blue,
+                          color: const Color.fromARGB(255, 100, 237, 255),
                         ),
                       ],
                     ),

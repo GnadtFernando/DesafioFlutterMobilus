@@ -8,7 +8,7 @@ class Page2 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.blueAccent,
+      backgroundColor: const Color.fromARGB(230, 60, 73, 177),
       body: SafeArea(
           child: Column(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -36,16 +36,22 @@ class Page2 extends StatelessWidget {
                     backgroundImage: AssetImage('assets/img/diana.jpeg'),
                     radius: 80,
                   ),
-                  const Text(
-                    'Diana Gnadt',
-                    style: TextStyle(fontWeight: FontWeight.bold, fontSize: 40),
-                  ),
-                  const Text(
-                    'Cão guia',
-                    style: TextStyle(fontSize: 18),
-                  ),
+                  Column(children: const [
+                    Text(
+                      'Diana Gnadt',
+                      style:
+                          TextStyle(fontWeight: FontWeight.bold, fontSize: 40),
+                    ),
+                    Text(
+                      'Cão guia',
+                      style: TextStyle(fontSize: 18),
+                    ),
+                  ]),
                   ElevatedButton(
                     style: ElevatedButton.styleFrom(
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(16.0),
+                      ),
                       primary: Colors.green,
                       fixedSize: const Size(300, 40),
                     ),

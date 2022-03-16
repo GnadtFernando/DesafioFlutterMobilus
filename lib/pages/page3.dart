@@ -5,10 +5,58 @@ class Page3 extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
-      body: Center(
-        child: Text('Page 3',
-            style: TextStyle(fontSize: 30.0, fontWeight: FontWeight.bold)),
+    return Scaffold(
+      body: SafeArea(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          children: [
+            SizedBox(
+              width: 800,
+              height: 200,
+              child: Image.asset('assets/img/umbrella_logo.png'),
+            ),
+            Column(
+              children: [
+                TextField(
+                  obscureText: false,
+                  decoration: InputDecoration(
+                    hintText: "Usuário",
+                    border: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(32),
+                    ),
+                  ),
+                ),
+                TextField(
+                  obscureText: false,
+                  decoration: InputDecoration(
+                    hintText: "Senha",
+                    border: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(32),
+                    ),
+                  ),
+                ),
+              ],
+            ),
+            Column(
+              children: [
+                ElevatedButton(
+                  style: ElevatedButton.styleFrom(
+                    fixedSize: const Size(300, 40),
+                  ),
+                  onPressed: () => {},
+                  child: const Text('Login'),
+                ),
+                ElevatedButton(
+                  style: ElevatedButton.styleFrom(
+                    fixedSize: const Size(300, 40),
+                  ),
+                  onPressed: () => {},
+                  child: const Text('Forgot password?'),
+                ),
+              ],
+            )
+          ],
+        ),
       ),
     );
   }

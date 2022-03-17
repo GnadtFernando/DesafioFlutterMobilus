@@ -98,10 +98,8 @@ class Page2 extends StatelessWidget {
                       ),
                       IconButton(
                         onPressed: () => {
-                          Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                  builder: (context) => const Page3()))
+                          Navigator.push(context,
+                              MaterialPageRoute(builder: (context) => Page3()))
                         },
                         icon: const Icon(
                           Icons.navigate_next,

@@ -71,9 +71,13 @@ class _Page3State extends State<Page3> {
                     ),
                     onPressed: () => {
                       if (email == 'leon@re4.com' && senha == 'senha#1234')
-                        {ViewUtils.showMessage(context, "Logado com sucesso")}
+                        {
+                          ViewUtils.showMessage(context, "Logado com sucesso"),
+                        }
                       else
-                        {ViewUtils.showMessage(context, "Dados inválidos")},
+                        {
+                          ViewUtils.showMessage(context, "Dados inválidos"),
+                        },
                     },
                     child: const Text('Login'),
                   ),
@@ -84,11 +88,23 @@ class _Page3State extends State<Page3> {
                     style: ElevatedButton.styleFrom(
                       fixedSize: const Size(300, 40),
                     ),
-                    onPressed: () => {},
+                    onPressed: () => {
+                      {
+                        ViewUtils.showMessage(context,
+                            "Enviamos a recuperação para sua caixa de e-mail"),
+                      },
+                    },
                     child: const Text('Forgot password?'),
                   ),
                 ],
-              )
+              ),
+              IconButton(
+                onPressed: () => {Navigator.pop(context)},
+                icon: const Icon(
+                  Icons.navigate_before,
+                  size: 60,
+                ),
+              ),
             ],
           ),
         ),

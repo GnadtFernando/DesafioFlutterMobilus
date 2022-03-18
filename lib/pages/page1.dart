@@ -19,7 +19,7 @@ class Page1 extends StatelessWidget {
               decoration: BoxDecoration(
                   color: Colors.white,
                   border: Border.all(
-                    width: 3.0,
+                    width: 0.1,
                     color: Colors.white,
                   ),
                   borderRadius: const BorderRadius.all(Radius.circular(5.0))),

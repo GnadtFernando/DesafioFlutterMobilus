@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:mobilus_test/pages/page3.dart';
+import 'package:mobilus_test/pages/page1.dart';
 
 void main() => runApp(const MyApp());
 
@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: Page3(),
+      home: const Page1(),
     );
   }
 }

@@ -77,6 +77,9 @@ class _Page3State extends State<Page3> {
                     },
                     child: const Text('Login'),
                   ),
+                  const SizedBox(
+                    height: 10,
+                  ),
                   ElevatedButton(
                     style: ElevatedButton.styleFrom(
                       fixedSize: const Size(300, 40),

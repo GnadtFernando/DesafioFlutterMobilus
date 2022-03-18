@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
+import 'package:mobilus_test/models/user.dart';
 import 'package:mobilus_test/pages/page3.dart';
 
 void main() {

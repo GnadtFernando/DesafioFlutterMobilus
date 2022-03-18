@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../utils/view_utils.dart';
+
 class Page3 extends StatefulWidget {
   const Page3({Key? key}) : super(key: key);
 
@@ -69,13 +71,9 @@ class _Page3State extends State<Page3> {
                     ),
                     onPressed: () => {
                       if (email == 'leon@re4.com' && senha == 'senha#1234')
-                        {
-                          print('correto'),
-                        }
+                        {ViewUtils.showMessage(context, "Logado com sucesso")}
                       else
-                        {
-                          print('dados inválidos'),
-                        },
+                        {ViewUtils.showMessage(context, "Dados inválidos")},
                     },
                     child: const Text('Login'),
                   ),
